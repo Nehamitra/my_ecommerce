@@ -36,7 +36,7 @@ public class ProductController {
         List<Product> products = productRepository.findAll();
         return ResponseEntity.ok(products);
     }
-
+    //I have added pagination for enhanced search functionality.
     // ✅ Category-based paginated + filtered product listing
     @GetMapping("/{categoryId}")
     public Page<Product> getProductsByCategory(
