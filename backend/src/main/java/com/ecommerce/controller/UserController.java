@@ -21,7 +21,7 @@ public class UserController {
 
     @Autowired
     private UserRepository userRepository;
-
+//i have added  a stronger authentication with 1 uppercase, 1 lowercase, 1 number, i special character.
     @GetMapping("/me")
     public ResponseEntity<?> getCurrentUser() {
         try {
